@@ -2,38 +2,27 @@ import type { Metadata } from 'next'
 import './globals.css'
 import NavBarLayout from '@/components/Layout/index.js'
 
-import imagewrapper from "@/styles/Image.module.css";
-import Image from "next/image";
-
 export const metadata: Metadata = {
   title: 'Jacob Serafin',
-  description: 'Showcasing my work and projects',
+  description: 'Showcase of my experience, projects and skills.',
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
     return (
-    <html lang="en">
-        <body className={'${inter.className} antialiased h-screen'}>
-            <div className="flex-grow flex flex-row">
-                <div className="w-full flex-grow md:w-64 ">
-                    <NavBarLayout />
-                </div>
+    <html lang="en antialiased h-screen">
+        <head>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title></title>
+        </head>
 
-                <main className="flex-col z-50">
-                    {children}
-                </main>
+        <body>
+            <div className={'navigation md:w-64'}>
+                <NavBarLayout />
+            </div>
 
-                <div>
-                    <div className={imagewrapper.featuredImageWrapper}></div>
-
-                    <Image
-                        src="/images/me.png"
-                        alt="Me in Banff, Alberta - Big Beehive Hike, 2022."
-                        fill
-                        objectFit="cover"
-                        priority
-                    />
-                </div>
+            <div>
+                {children}
             </div>
         </body>
     </html>

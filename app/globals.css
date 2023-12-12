@@ -17,6 +17,10 @@
 }
 
 body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +28,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.navigation {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
 }
