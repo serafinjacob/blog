@@ -11,13 +11,13 @@ export default function Home() {
   return (
         <main>
             <div className="flex flex-col justify-center text-center">
-                <p className="text-6xl font-bold pt-20 pb-5 z-10">
+                <p className="text-5xl font-bold pt-20 z-10">
                     {introductionArray[0]}
                 </p>
-                <p className="mt-3 text-2xl pt-5 pl-10 pr-10 pb-5 z-10">
+                <p className="mt-3 text-xl pl-10 pr-10 pb-5px z-10">
                     {introductionArray[1]}
                 </p>
-                <p className="text-lg pt-5 pl-10 pr-10 pb-5 z-10">
+                <p className="text-m mt-3 pl-10 pr-10 pb-5px z-10">
                     {introductionArray[2]}
                 </p>
             </div>
