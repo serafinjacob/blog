@@ -17,7 +17,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
         </head>
 
         <body>
-            <div className={'navigation md:w-64'}>
+            <div className={'md:w-64'}>
                 <NavBarLayout />
             </div>
 
