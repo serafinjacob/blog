@@ -1,0 +1,7 @@
+.typingEffect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.1em solid #000; /* Adjust color and size as needed */
+    white-space: nowrap;
+    margin: 0;
+}
