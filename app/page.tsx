@@ -10,8 +10,8 @@ const introductionArray = [
 export default function Home() {
   return (
         <main>
-            <div className="flex flex-col justify-center text-center ">
-                <p className="text-6xl font-bold pt-20 z-10">
+            <div className="flex flex-col justify-center text-center">
+                <p className="text-6xl font-bold pt-20 pb-5 z-10">
                     {introductionArray[0]}
                 </p>
                 <p className="mt-3 text-2xl pt-5 pl-10 pr-10 pb-5 z-10">
@@ -23,7 +23,7 @@ export default function Home() {
             </div>
             <div className={'ImageWrapper.wrap'}>
                 <Image
-                    src="/images/me.png"
+                    src="/images/me3.png"
                     alt="Me in Banff, Alberta - Big Beehive Hike, 2022."
                     fill
                     objectFit="cover"
