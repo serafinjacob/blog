@@ -1,11 +1,9 @@
 import type { Metadata } from 'next'
-import { inter } from '@/app/ui/fonts'
 import './globals.css'
 import NavBarLayout from '@/components/Layout/index.js'
 
 import imagewrapper from "@/styles/Image.module.css";
 import Image from "next/image";
-
 
 export const metadata: Metadata = {
   title: 'Jacob Serafin',
@@ -13,8 +11,7 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
-  // @ts-ignore
-  return (
+    return (
     <html lang="en">
         <body className={'${inter.className} antialiased h-screen'}>
             <div className="flex-grow flex flex-row">
