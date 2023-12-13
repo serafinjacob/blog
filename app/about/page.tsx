@@ -1,5 +1,5 @@
 import ContentContainerLayout from "@/components/ContentContainer/Layout";
-import ContentContainerUI from '/components/ContentContainer/UI/ContentContainer.module.css'
+import ContentContainerUI from '/components/ContentContainer/ui/ContentContainer.module.css'
 
 export default function Page() {
     return (

@@ -7,7 +7,7 @@ import {BiSolidHome as HomeIcon} from "react-icons/bi";
 import {usePathname} from "next/navigation";
 import Image from "next/image";
 import ImageWrapper from '/styles/Image.module.css'
-import ContentContainerUI from '/components/ContentContainer/UI/ContentContainer.module.css'
+import ContentContainerUI from '/components/ContentContainer/ui/ContentContainer.module.css'
 
 export default function ContentContainerLayout({title, description, image, route, icon}) {
 
