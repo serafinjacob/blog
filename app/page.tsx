@@ -9,7 +9,7 @@ const introductionArray = [
 
 export default function Home() {
   return (
-        <main>
+        <main className="flex-grow">
             <div className="flex flex-col justify-center text-center">
                 <p className="text-5xl font-bold pt-20 z-10">
                     {introductionArray[0]}
