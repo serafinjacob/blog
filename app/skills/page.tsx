@@ -1,3 +1,6 @@
+import SkillContainer from "@/components/ContentContainer/Layout/SkillContainer";
+import { FaPython } from "react-icons/fa";
+
 const programmingExperience
     = "Python, C, Java, HTML, CSS, JavaScript"
 const databaseExperience
@@ -12,9 +15,13 @@ export default function Page() {
             <h1 className="text-4xl font-bold pt-10">
                 Programming Experience
             </h1>
-            <h2 className="mt-3 text-2xl p-3 font-bold">
-                {programmingExperience}
-            </h2>
+            <SkillContainer
+                {...{
+                    title: 'Python',
+                    route: '/skills/python',
+                    icon: <FaPython />
+                }}
+            />
 
             <h1 className="text-4xl font-bold">
                 Database Experience
