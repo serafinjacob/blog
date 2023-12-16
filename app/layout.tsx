@@ -11,7 +11,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
     return (
     <html lang="en">
         <body className="flex">
-            <div className={'md:w-64'}>
+            <div className={'md:w-64 min-h-screen'}>
                 <NavBarLayout />
             </div>
 

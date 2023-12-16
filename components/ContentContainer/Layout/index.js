@@ -13,7 +13,8 @@ export default function ContentContainerLayout({title, description, image, route
     const pathname = usePathname()
 
     // Define our base class
-    const className = "max-w-[350px] border-[2px] border-white/10 rounded-2xl " +
+    const className = "grid grid-rows-[80%_20%] " +
+        "border-[2px] border-white/10 rounded-2xl " +
         "text-white/50 hover:text-white hover:border-white " +
         "hover:transform hover:scale-95 transition-all ease-in-out duration-1000 " +
         "z-10";
@@ -23,28 +24,27 @@ export default function ContentContainerLayout({title, description, image, route
                 href={route}
             >
                 <div className={ContentContainerUI.container}>
-                </div>
-                <div className={ImageWrapper.wrap}>
-                    <Image className={"rounded-t-2xl border-b-[2px] border-white/10"}
-                           src={image}
-                           alt={title}
-                           fill
-                           objectFit="cover"
-                    />
-                </div>
-
-                <div className={ContentContainerUI.info}>
-                    <div>
-                        <p className={ContentContainerUI.title}>
-                            {title}
-                        </p>
-
-                        <p className={ContentContainerUI.description}>
-                            {description}
-                        </p>
+                    <div className={ImageWrapper.wrap}>
+                        <Image className={"rounded-t-2xl border-b-[2px] border-white/10"}
+                               src={image}
+                               fill
+                               objectFit="cover"
+                        />
                     </div>
-                    <div className={ContentContainerUI.icon}>
-                        {icon}
+
+                    <div className={ContentContainerUI.info}>
+                        <div>
+                            <p className={ContentContainerUI.title}>
+                                {title}
+                            </p>
+
+                            <p className={ContentContainerUI.description}>
+                                {description}
+                            </p>
+                        </div>
+                        <div className={ContentContainerUI.icon}>
+                            {icon}
+                        </div>
                     </div>
                 </div>
             </Link>
