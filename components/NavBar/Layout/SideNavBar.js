@@ -20,7 +20,7 @@ export default function SideNavBar({ show, setter }) {
     // Clickable menu items
     const MenuItem = ({ icon, name, route }) => {
         // Highlight menu item based on currently displayed route
-        const colorClass = pathname === route ? "text-white" : "text-white/50 hover:text-white";
+        const colorClass = pathname === route ? "text-white ease-in-out duration-500" : "text-white/50 hover:text-white ease-in-out duration-500";
 
         return (
             <Link

@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     max-width: 756px;
+    min-height: 100%;
     aspect-ratio: 3/4;
     overflow: hidden;
     z-index: 0;
