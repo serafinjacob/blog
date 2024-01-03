@@ -1,7 +1,6 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 1%;
     align-content: center;
     justify-content: center;
 }
@@ -11,7 +10,7 @@
     max-width: 512px;
     flex-grow: 1;
     flex-basis: 0;
-
+    margin: 1%;
 }
 
 .title {
